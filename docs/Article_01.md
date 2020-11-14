@@ -12,7 +12,7 @@ categories: ["Programming", "Julia"]
 When it comes to developing and maintaining code, there are a lot of different viewpoints and conventions out there.
 The field of software engineering has come up with a lot of development cycles, idoms, design patterns and project structures over the years.\
 Since Julia packages are typically small in scale and the code can stay relatively concise, we will pick a single approach, that seems to fit this use case.
-Generally, the code developed here will follow the principles of (Test Driven Development (TDD))[https://en.wikipedia.org/wiki/Test-driven_development].
+Generally, the code developed here will follow the principles of (Test Driven Development [TDD](https://en.wikipedia.org/wiki/Test-driven_development).
 This style lends itself very well to functional languages, such as Julia.
 One dezisive advantage for programmers without much experience with traditional software engineering practises is the automatic emergence of decoupled, pure functions.\
 This effect is due to the cycle of having to define a test before being able to implement the feature.
@@ -22,7 +22,7 @@ TODO: finish this, explain TDD
 
 We will employ a number of external services and tools in order to automate everything in the test and deployment cycle.
 There are services known as continuous integration providers available, which check every git push that you make to a publicly available page like GitHub and perform serveral actions on that push.
-Two well known services are (TravisCI)[https://travis-ci.com/] and (GitHub Actions)[https://github.com/features/actions]. 
+Two well known services are [TravisCI](https://travis-ci.com/) and [GitHub Actions](https://github.com/features/actions). 
 Here, we will focus on GitHub Actions, but the general setup remains similar between services.
 
 One important thing to keep in mind is, that the services may need ssh keys to communicate with each other. 
@@ -34,14 +34,14 @@ So in addition to some dot-file placed in your repository, that the associated s
 
 ## Version Control
 
-Out version controll of choice will be (git)[https://git-scm.com/] with (GitHub)[https://github.com/] as a hosting provider.
+Out version controll of choice will be [git](https://git-scm.com/) with [GitHub](https://github.com/) as a hosting provider.
 GitHub is useful for a small project, because it also offers free static website hosting and a continous integration system, keeping a bunch of services under one name.
 
 
 ## Test Coverage
 
 Providing a metric for test coverage is a form of common courtesy, providing some sort of guarantee, that users can rely on.
-We will use two main projects, (coverall)[https://coveralls.io/] and (codecov)[https://codecov.io/].
+We will use two main projects, [coverall](https://coveralls.io/) and [codecov](https://codecov.io/).
 Both coverage analysis tools will be triggered through our continuous integration provider and build into the documentation.
 
 
