@@ -31,6 +31,11 @@ So in addition to some dot-file placed in your repository, that the associated s
 
 ## Continuous Integration
 
+As explained above, we will focus on GitHub Actions as a continuous integration provider.
+Furthermore, we can make use of already existing actions, as defined in [julia-actions](https://github.com/julia-actions).
+Many of these actions will be automatically employed after generating the GitHub Actions `.yml` files in section [Setting up a project](#markdown-header-setting-up-a-project).
+One often needs to hand tune the setting, adding additional actions to the `.github/workflows/ci.yml` files.
+
 
 ## Version Control
 
@@ -118,4 +123,4 @@ jobs:
         run: julia --project=docs/ docs/make.jl
 ```
 
-Lastly make sure, that the github pages are enabled for the repository in question.
+Lastly make sure, that the github pages are enabled for the repository in question and the default pages point to the `gh-pages` branch. Also make sure to merge the pull request, that `Documenter.jl` opens ofter the first push.
