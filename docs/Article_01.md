@@ -33,8 +33,10 @@ So in addition to some dot-file placed in your repository, that the associated s
 
 As explained above, we will focus on GitHub Actions as a continuous integration provider.
 Furthermore, we can make use of already existing actions, as defined in [julia-actions](https://github.com/julia-actions).
+Actions itself are packages of instructions that are cloned from github repositories on demand.
 Many of these actions will be automatically employed after generating the GitHub Actions `.yml` files in section [Setting up a project](#markdown-header-setting-up-a-project).
 One often needs to hand tune the setting, adding additional actions to the `.github/workflows/ci.yml` files.
+
 
 
 ## Version Control
